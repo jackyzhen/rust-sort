@@ -37,7 +37,6 @@ pub fn sort<T: Sortable>(list: &mut [T]) {
 }
 
 fn shift_right<T: Sortable>(list: &mut [T], start: usize, end: usize) {
-    println!("start {} end {}", start, end);
     for i in ((start + 1)..=end).rev() {
         list[i] = list[i - 1];
     }

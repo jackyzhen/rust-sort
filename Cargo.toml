@@ -3,5 +3,6 @@ name = "rust-sort"
 version = "0.1.0"
 authors = ["Jacky Zhen <jacky.s.zhen@gmail.com>"]
 description = "Implementation of common sorting algorithms, purely for learning."
+license = "MIT"
 
 [dependencies]
