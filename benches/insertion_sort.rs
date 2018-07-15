@@ -59,3 +59,15 @@ fn insertion_sort_presort_1000_few_keys(b: &mut Bencher) {
         sort(&mut SORTED_1000_FEW_KEYS.clone())
     });
 }
+#[bench]
+fn insertion_sort_reverse_1000(b: &mut Bencher) {
+    b.iter(|| {
+        sort(&mut REVERSE_1000.clone())
+    });
+}
+#[bench]
+fn insertion_sort_reverse_1000_few_keys(b: &mut Bencher) {
+    b.iter(|| {
+        sort(&mut REVERSE_1000_FEW_KEYS.clone())
+    });
+}

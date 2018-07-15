@@ -22,7 +22,6 @@ fn selection_sort_10_000_few_keys(b: &mut Bencher) {
     });
 }
 #[bench]
-#[bench]
 fn selection_sort_1000(b: &mut Bencher) {
     b.iter(|| {
         sort(&mut RANDOM_1000.clone())
@@ -58,5 +57,17 @@ fn selection_sort_presort_1000(b: &mut Bencher) {
 fn selection_sort_presort_1000_few_keys(b: &mut Bencher) {
     b.iter(|| {
         sort(&mut SORTED_1000_FEW_KEYS.clone())
+    });
+}
+#[bench]
+fn selection_sort_reverse_1000(b: &mut Bencher) {
+    b.iter(|| {
+        sort(&mut REVERSE_1000.clone())
+    });
+}
+#[bench]
+fn selection_sort_reverse_1000_few_keys(b: &mut Bencher) {
+    b.iter(|| {
+        sort(&mut REVERSE_1000_FEW_KEYS.clone())
     });
 }

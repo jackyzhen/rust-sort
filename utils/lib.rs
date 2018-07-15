@@ -86,3 +86,30 @@ lazy_static! {
         (0..50).flat_map(|v| iter::repeat(v).take(2)).collect()
     };
 }
+
+lazy_static! {
+    pub static ref REVERSE_100_000: Vec<usize> = {
+        (0..100_000).rev().collect()
+    };
+    pub static ref REVERSE_10_000: Vec<usize> = {
+        (0..10_000).rev().collect()
+    };
+    pub static ref REVERSE_1000: Vec<usize> = {
+        (0..1000).rev().collect()
+    };
+    pub static ref REVERSE_100: Vec<usize> = {
+        (0..100).rev().collect()
+    };
+    pub static ref REVERSE_100_000_FEW_KEYS: Vec<usize> = {
+        (0..50).rev().flat_map(|v| iter::repeat(v).take(2000)).collect()
+    };
+    pub static ref REVERSE_10_000_FEW_KEYS: Vec<usize> = {
+        (0..50).rev().flat_map(|v| iter::repeat(v).take(200)).collect()
+    };
+    pub static ref REVERSE_1000_FEW_KEYS: Vec<usize> = {
+        (0..50).rev().flat_map(|v| iter::repeat(v).take(20)).collect()
+    };
+    pub static ref REVERSE_100_FEW_KEYS: Vec<usize> = {
+        (0..50).rev().flat_map(|v| iter::repeat(v).take(2)).collect()
+    };
+}
