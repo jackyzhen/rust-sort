@@ -1,15 +1,12 @@
 extern crate rust_sort;
-extern crate rand;
+extern crate utils;
 
-use rand::Rng;
 use rust_sort::*;
+use utils::RANDOM_1000;
 
 #[test]
 fn insertion_sort() {
-    let mut rng = rand::thread_rng();
-    let mut expected: Vec<usize> = (0..1000).map(|_| {
-        rng.gen_range(0, 1000)
-    }).collect();
+    let mut expected = RANDOM_1000.clone();
     let mut actual = expected.clone();
 
     expected.sort();
@@ -20,10 +17,7 @@ fn insertion_sort() {
 
 #[test]
 fn selection_sort() {
-    let mut rng = rand::thread_rng();
-    let mut expected: Vec<usize> = (0..1000).map(|_| {
-        rng.gen_range(0, 1000)
-    }).collect();
+    let mut expected = RANDOM_1000.clone();
     let mut actual = expected.clone();
 
     expected.sort();
@@ -34,10 +28,7 @@ fn selection_sort() {
 
 #[test]
 fn bubble_sort() {
-    let mut rng = rand::thread_rng();
-    let mut expected: Vec<usize> = (0..1000).map(|_| {
-        rng.gen_range(0, 1000)
-    }).collect();
+    let mut expected = RANDOM_1000.clone();
     let mut actual = expected.clone();
 
     expected.sort();

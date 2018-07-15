@@ -1,0 +1,12 @@
+[package]
+version = "0.0.1"
+name = "utils"
+authors = ["Jacky Zhen <jacky.s.zhen@gmail.com>"]
+description = "Internal helper utils for testing"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+rand = "0.5.4"
+lazy_static = "1.0.2"
