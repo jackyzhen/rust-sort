@@ -7,12 +7,12 @@ A collection of sorting algorithms implemented in rust purely for educational pu
 ## sorts
 
 - bubble sort
+- cocktail sort
 - selection sort
 - insertion sort
 
 ## TODO
 
-- cocktail sort
 - merge sort
 - quick sort
 - tim sort
@@ -22,4 +22,3 @@ A collection of sorting algorithms implemented in rust purely for educational pu
 - radix sort
 - sleep sort
 - bogo sort
-

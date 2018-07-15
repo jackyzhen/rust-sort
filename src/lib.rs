@@ -3,9 +3,9 @@
 //! - bubble sort
 //! - selection sort
 //! - insertion sort
+//! - cocktail sort
 //!
 //! TODO
-//! - cocktail sort
 //! - merge sort
 //! - quick sort
 //! - tim sort

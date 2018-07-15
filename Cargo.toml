@@ -1,9 +1,15 @@
 [package]
 name = "rust-sort"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jacky Zhen <jacky.s.zhen@gmail.com>"]
 description = "Implementation of common sorting algorithms, purely for learning."
 license = "MIT"
+homepage = "https://github.com/jackyzhen/rust-sort"
+repository = "https://github.com/jackyzhen/rust-sort"
+readme = "README.md"
+exclude = [
+    "utils/*",
+]
 
 [dev-dependencies]
-utils = { path = "utils" }
+utils = { path = "utils", version = "0.0.1" }
