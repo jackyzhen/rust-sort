@@ -34,14 +34,3 @@ pub fn sort<T: Sortable>(list: &mut [T]) {
         }
     }
 }
-
-#[cfg(test)]
-mod tests {
-    use super::sort;
-    #[test]
-    fn bubble_sort() {
-        let mut arr = [3, 2, 1, 7, 9, 4, 1, 2];
-        sort(&mut arr);
-        assert_eq!(arr, [1, 1, 2, 2, 3, 4, 7, 9]);
-    }
-}

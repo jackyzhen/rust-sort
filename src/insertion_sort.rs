@@ -25,30 +25,10 @@ pub fn sort<T: Sortable>(list: &mut [T]) {
     }
 
     for i in 1..len {
-        for j in 0..i {
-            if list[j] > list[i] {
-                let tmp = list[i];
-                shift_right(list, j, i);
-                list[j] = tmp;
-                break;
-            }
+        let mut j = i;
+        while j > 0 && list[j] < list[j-1]{
+            list.swap(j, j-1);
+            j -=1;
         }
-    }
-}
-
-fn shift_right<T: Sortable>(list: &mut [T], start: usize, end: usize) {
-    for i in ((start + 1)..=end).rev() {
-        list[i] = list[i - 1];
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    use super::sort;
-    #[test]
-    fn insertion_sort() {
-        let mut arr = [3, 2, 1, 7, 9, 4, 1, 2];
-        sort(&mut arr);
-        assert_eq!(arr, [1, 1, 2, 2, 3, 4, 7, 9]);
     }
 }

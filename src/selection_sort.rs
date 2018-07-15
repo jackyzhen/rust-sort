@@ -29,17 +29,8 @@ pub fn sort<T: Sortable>(list: &mut [T]) {
                 min = j
             }
         }
-        list.swap(i, min);
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    use super::sort;
-    #[test]
-    fn selection_sort() {
-        let mut arr = [3, 2, 1, 7, 9, 4, 1, 2];
-        sort(&mut arr);
-        assert_eq!(arr, [1, 1, 2, 2, 3, 4, 7, 9]);
+        if min != i {
+            list.swap(i, min);
+        }
     }
 }

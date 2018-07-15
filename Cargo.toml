@@ -6,3 +6,4 @@ description = "Implementation of common sorting algorithms, purely for learning.
 license = "MIT"
 
 [dependencies]
+rand = "0.5.4"
