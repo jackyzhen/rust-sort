@@ -36,3 +36,14 @@ fn bubble_sort() {
 
     assert_eq!(expected, actual);
 }
+
+#[test]
+fn cocktail_sort() {
+    let mut expected = RANDOM_1000.clone();
+    let mut actual = expected.clone();
+
+    expected.sort();
+    cocktail_sort::sort(&mut actual);
+
+    assert_eq!(expected, actual);
+}
