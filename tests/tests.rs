@@ -2,7 +2,7 @@ extern crate rust_sort;
 extern crate utils;
 
 use rust_sort::*;
-use utils::RANDOM_1000;
+use utils::*;
 
 #[test]
 fn insertion_sort() {
@@ -44,6 +44,17 @@ fn cocktail_sort() {
 
     expected.sort();
     cocktail_sort::sort(&mut actual);
+
+    assert_eq!(expected, actual);
+}
+
+#[test]
+fn merge_sort() {
+    let mut expected = RANDOM_1000.clone();
+    let mut actual = expected.clone();
+
+    expected.sort();
+    merge_sort::sort(&mut actual);
 
     assert_eq!(expected, actual);
 }

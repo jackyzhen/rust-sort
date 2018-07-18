@@ -2,7 +2,7 @@
 
 A collection of sorting algorithms implemented in rust purely for educational purposes
 
-[Documentation](https://docs.rs/rust-sort/0.1.0/rust_sort).
+[Documentation](https://docs.rs/rust-sort/).
 
 ## sorts
 
@@ -10,10 +10,10 @@ A collection of sorting algorithms implemented in rust purely for educational pu
 - cocktail sort
 - selection sort
 - insertion sort
+- merge sort
 
 ## TODO
 
-- merge sort
 - quick sort
 - tim sort
 - heap sort

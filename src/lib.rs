@@ -4,9 +4,9 @@
 //! - selection sort
 //! - insertion sort
 //! - cocktail sort
+//! - merge sort
 //!
 //! TODO
-//! - merge sort
 //! - quick sort
 //! - tim sort
 //! - heap sort
@@ -20,6 +20,7 @@ pub mod bubble_sort;
 pub mod insertion_sort;
 pub mod selection_sort;
 pub mod cocktail_sort;
+pub mod merge_sort;
 
 use std::fmt::{Debug, Display};
 

@@ -43,6 +43,12 @@ lazy_static! {
             rng.gen_range(0, LARGE_KEYS)
         }).collect()
     };
+    pub static ref RANDOM_10: Vec<usize> = {
+        let mut rng: StdRng = StdRng::from_seed(RNG_SEED);
+        (0..10).map(|_| {
+            rng.gen_range(0, LARGE_KEYS)
+        }).collect()
+    };
     pub static ref RANDOM_100_000_FEW_KEYS: Vec<usize> = {
         let mut rng: StdRng = StdRng::from_seed(RNG_SEED);
         (0..100_000).map(|_| {
@@ -64,6 +70,12 @@ lazy_static! {
     pub static ref RANDOM_100_FEW_KEYS: Vec<usize> = {
         let mut rng: StdRng = StdRng::from_seed(RNG_SEED);
         (0..100).map(|_| {
+            rng.gen_range(0, SMALL_KEYS)
+        }).collect()
+    };
+    pub static ref RANDOM_10_FEW_KEYS: Vec<usize> = {
+        let mut rng: StdRng = StdRng::from_seed(RNG_SEED);
+        (0..10).map(|_| {
             rng.gen_range(0, SMALL_KEYS)
         }).collect()
     };
