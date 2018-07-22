@@ -1,6 +1,6 @@
 use super::Sortable;
 
-/// Merge sorts unstable, in ascending order a mutable ref slice of type T: Sortable
+/// Merge sorts stable, not in-place, in ascending order a mutable ref slice of type T: Sortable
 ///
 /// Merge sort is an efficient divide and conquer sort.
 /// Conceptually, a merge sort works as follows:

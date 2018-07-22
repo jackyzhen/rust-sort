@@ -11,10 +11,10 @@ A collection of sorting algorithms implemented in rust purely for educational pu
 - selection sort
 - insertion sort
 - merge sort
+- quick sort
 
 ## TODO
 
-- quick sort
 - tim sort
 - heap sort
 - counting sort

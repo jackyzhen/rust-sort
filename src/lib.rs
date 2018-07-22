@@ -5,9 +5,9 @@
 //! - insertion sort
 //! - cocktail sort
 //! - merge sort
+//! - quick sort
 //!
 //! TODO
-//! - quick sort
 //! - tim sort
 //! - heap sort
 //! - counting sort
@@ -21,6 +21,7 @@ pub mod insertion_sort;
 pub mod selection_sort;
 pub mod cocktail_sort;
 pub mod merge_sort;
+pub mod quick_sort;
 
 use std::fmt::{Debug, Display};
 
