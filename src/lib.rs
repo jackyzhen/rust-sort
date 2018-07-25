@@ -22,6 +22,7 @@ pub mod selection_sort;
 pub mod cocktail_sort;
 pub mod merge_sort;
 pub mod quick_sort;
+pub mod heap_sort;
 
 use std::fmt::{Debug, Display};
 

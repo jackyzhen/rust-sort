@@ -12,13 +12,13 @@ A collection of sorting algorithms implemented in rust purely for educational pu
 - insertion sort
 - merge sort
 - quick sort
+- heap sort
 
 ## TODO
 
-- tim sort
-- heap sort
 - counting sort
 - bucket sort
 - radix sort
 - sleep sort
 - bogo sort
+- tim sort
